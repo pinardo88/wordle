@@ -1,0 +1,92 @@
+.darkModeApp {
+  background-color: rgb(22, 22, 22);
+  color: rgb(241, 241, 241);
+}
+
+.normalApp {
+  background-color: rgb(241, 241, 241);
+  color: rgb(22, 22, 22);
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  
+  /* min-width: 470px;
+  min-height: 1000px; */
+}
+
+.KeyboardRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vw;
+  gap: .4vw;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.keyboardBlocks {
+  /* background-color: rgb(219, 219, 219); */
+  border-radius: 5px;
+  width: clamp(40px, 3.5vw, 55px);
+  height: clamp(40px, 3.5vw, 55px);
+  font-size: clamp(18px, 2.1rem, 32px);
+  text-align: center;
+}
+
+.guessGrid {
+  border: 2px solid #e2e2e2;
+  margin: .25vw;
+  width: clamp(50px, 4vw, 70px);
+  height: clamp(50px, 4vw, 70px);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.entireGuessBoard {
+  margin: 0 auto;
+  
+}
+
+.eachBoardRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.restartBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: rgb(27, 27, 27);
+  color: #f4f4f4;
+}
+
+.inputSpace {
+  height: 28px;
+  width: 15vw;
+}
+
+.submitBtn {
+  width: 100px;
+  height: 35px;
+  /* height: clamp(20px, 35px, 40px); */
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 1vw;
+  margin-bottom: -.5vw;
+  text-align: center;
+  /* font-size: 12px; */
+}
+
+.inputSpaceNButton {
+  margin-top: 2.5vw;
+  margin-bottom: 3vw;
+  display: flex;
+  flex-direction: row;
+}
